@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Produk</title>
+    <link rel="stylesheet" href="style.css"> <!-- Import CSS -->
+</head>
+<body>
+
+    <h2>Manajemen Produk Toko Online - Arka</h2>
+
+    <!-- Form Tambah Produk -->
+    <div class="form-container">
+        <input type="text" id="nama" placeholder="Nama Produk">
+        <input type="number" id="harga" placeholder="Harga Produk">
+        <input type="number" id="stok" placeholder="Stok Produk">
+        <button onclick="tambahProduk()">Tambah Produk</button>
+    </div>
+
+    <!-- Tabel Daftar Produk -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama Produk</th>
+                <th>Harga</th>
+                <th>Stok</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="produk-tbody"></tbody>
+    </table>
+
+    <script src="script.js"></script> <!-- Import js -->
+</body>
+</html>
